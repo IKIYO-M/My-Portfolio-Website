@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Ikiyo Mary Stephen</title>
+  <meta name="description" content="Interactive academic task planner for Ikiyo Mary Stephen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand"><span class="brand-dot" aria-hidden="true"></span><strong>S.I.M</strong></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">☰</button>
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="project.html">project</a></li>
+        <li><a href="planner.html" aria-current="page">planner</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--tight">
+      <div class="wrap">
+        <p class="eyebrow">Dashboard</p>
+        <h1>Academic Planner</h1>
+        <p>A simple, intuitive workspace to help manage the semester's workload. Track your assignments, projects, and study milestones in real time to stay organized and ahead of your deadlines..</p>
+        <p><strong>You've got this!🫵🏾</strong></p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="panel">
+
+          <!-- Task input form -->
+          <form id="taskForm" class="planner-input-row" autocomplete="off">
+            <label for="taskInput" class="sr-only" style="position:absolute; left:-9999px;">New task</label>
+            <input type="text" id="taskInput" name="taskInput" placeholder="e.g. Revision for Upcoming Exam " required maxlength="120">
+            <button type="submit" class="btn btn-solid">+ Add task</button>
+          </form>
+
+          <p class="planner-stats" id="plannerStats" aria-live="polite">
+            <span><strong id="statTotal">0</strong> total</span>
+            <span><strong id="statDone">0</strong> completed</span>
+            <span><strong id="statPending">0</strong> pending</span>
+          </p>
+
+          <!-- Task list renders here via planner.js -->
+          <ul class="task-list" id="taskList" aria-live="polite">
+            <li task-id="2">Submit: CSC 106 PROJECT</li>
+            <li task-id="3">Prepare: 2nd Semester Exams</li>
+            <li task-id="4">Create a GitHub Repository for My Project</li>
+            <li task-id="5">Submit: Technical Certificate Report</li>
+          </ul>
+
+          <p class="planner-empty" id="emptyState"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Ikiyo Mary Stephen — All rights reserved.</p>
+      <a href="mailto:ikiyostephen@gmail.com">ikiyostephen@gmail.com</a>
+      <a href="mailto:i.stephen@miva.edu.ng">i.stephen@miva.edu.ng</a>
+    </div>
+  </footer>
+
+  <script src="JAVASCRIPT/nav.js"></script>
+  <script src="JAVASCRIPT/planner.js"></script>
+</body>
+</body>
+</html>

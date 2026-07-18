@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ikiyo Mary Stephen</title>
+  <meta name="description" content="Get in touch with Ikiyo Mary Stephen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand"><span class="brand-dot" aria-hidden="true"></span><strong>S.I.M</strong></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">☰</button>
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="project.html">project</a></li>
+        <li><a href="planner.html">planner</a></li>
+        <li><a href="contact.html" aria-current="page">contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--tight">
+      <div class="wrap grid grid-2">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h1>Let's connect</h1>
+          <p>Questions about a project, or just want to talk cybersecurity? Send a message and I'll get back to you.</p>
+          <p style="font-family:var(--font-mono); font-size:0.9rem;">📩 <a href="mailto:ikiyostephen@gmail.com">ikiyostephen@gmail.com</a></p>
+          <br>
+                  <p style="font-family:var(--font-mono); font-size:0.9rem;">📩<a href="mailto:i.stephen0755@miva.edu.ng">i.stephen0755@miva.edu.ng</a></p>
+        </div>
+
+        <div class="panel">
+          <form id="contactForm" novalidate>
+
+            <div class="field" id="nameField">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name">
+              <span class="error-text" id="nameError"></span>
+            </div>
+
+            <div class="field" id="emailField">
+              <label for="email">Email address</label>
+              <input type="text" id="email" name="email" placeholder="you@example.com">
+              <span class="error-text" id="emailError"></span>
+            </div>
+
+            <div class="field" id="phoneField">
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" placeholder="Digits only, e.g. 08012345678">
+              <span class="error-text" id="phoneError"></span>
+            </div>
+
+            <div class="field" id="messageField">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Type your message..."></textarea>
+              <span class="error-text" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-solid">Send message</button>
+
+            <div class="form-status" id="formStatus" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Ikiyo Mary Stephen — All rights reserved.</p>
+      <a href="mailto:ikiyostephen@gmail.com">ikiyostephen@gmail.com</a>
+      <a href="mailto:i.stephen0755@miva.edu.ng">i.stephen0755@miva.edu.ng</a>
+    </div>
+  </footer>
+
+  <script src="JAVASCRIPT/nav.js"></script>
+  <script src="JAVASCRIPT/validation.js"></script>
+  <script src="JAVASCRIPT/script.js"></script>
+  <script src="JAVASCRIPT/planner.js"></script>
+</body>
+</body>
+</body>
+</html>
